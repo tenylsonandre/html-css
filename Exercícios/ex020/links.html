@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELECTORES PERSONALIZADOS
+            # = id
+            . = classe
+            : = pseudo-classe
+            :: = pseudo-elemento
+            > = children (filho)
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: purple;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    
+        a:hover {
+            color: plum;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        .especial {
+            color: aliceblue;
+            background-color: purple;
+            border-radius: 100px;
+        }
+
+        .especial::before {
+            content: '⇝';
+        }
+        .especial::after {
+            content: '⇜';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalização de links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/flying__far/" target="_blank" class="especial">Página do Instagram</a></li>
+        <li><a href="https://br.pinterest.com/flying__far/" target="_blank" class="especial">Perfil do Pinterest</a></li>
+    </ul>
+</body>
+</html>
